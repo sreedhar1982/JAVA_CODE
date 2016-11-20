@@ -1,0 +1,14 @@
+#ribbon.ConnectTimeout= 30000
+#ribbon.ReadTimeout=990000
+#ribbon.maxAutoRetries=1
+#ribbon.MaxAutoRetriesNextServer=2
+server.port=8908
+
+zuul.routes.Testing-APP.path=/test/**
+#zuul.routes.Testing-APP.serviceId=Testing-APP
+#zuul.routes.Testing-APP.url=localhost:8080
+Testing-APP.ribbon.eureka.enabled=false
+
+#zuul.routes.Testing-APP.stripPrefix=false
+
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
